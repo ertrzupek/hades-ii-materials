@@ -4,10 +4,10 @@ import d from './data.json';
 
 const Row = (props) => {
     const itemData = props.data;
-    const handleColor = (e) => {
+    const handleNumChange = (e) => {
         e.preventDefault();
         console.log(e.target.children[0].value);
-        localStorage.setItem("item1", e.target.children[0].value);
+        localStorage.setItem(itemData.name, e.target.children[0].value);
     }
     return(
         <tr>
@@ -16,8 +16,8 @@ const Row = (props) => {
             <td>{itemData.location}</td>
             <td>{itemData.method}</td>
             <td>
-                <form onSubmit={handleColor}>
-                    <input type="text" id={itemData.id + "_textinput"} name={itemData.name + " needed"} defaultValue={localStorage.getItem("item1")}/>
+                <form onSubmit={handleNumChange}>
+                    <input type="text" id={itemData.id + "_textinput"} name={itemData.name + " needed"} defaultValue={localStorage.getItem(itemData.name)}/>
                 </form>
             </td>
         </tr>
