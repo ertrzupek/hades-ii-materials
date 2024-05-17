@@ -1,0 +1,362 @@
+[
+  {
+    "name": "ashes",
+    "uses": "arcana unlocks",
+    "location": "any",
+    "method": "room reward",
+    "filename": "ashes.png",
+    "id": 0
+  },
+  {
+    "name": "bones",
+    "uses": "shop currency",
+    "location": "any",
+    "method": "room reward",
+    "filename": "bones.png",
+    "id": 1
+  },
+  {
+    "name": "bronze",
+    "uses": "weapon/tool upgrades",
+    "location": "city of ephyra",
+    "method": "pick",
+    "filename": "bronze.png",
+    "id": 2
+  },
+  {
+    "name": "cattail",
+    "uses": "incantations",
+    "location": "oceanus",
+    "method": "grown",
+    "filename": "cattail.png",
+    "id": 3
+  },
+  {
+    "name": "cattail seeds",
+    "uses": "growing greeneries",
+    "location": "oceanus",
+    "method": "spade",
+    "filename": "cattailseeds.png",
+    "id": 4
+  },
+  {
+    "name": "cinder",
+    "uses": "incantations",
+    "location": "erebus",
+    "method": "boss reward",
+    "filename": "cinder.png",
+    "id": 5
+  },
+  {
+    "name": "darkness",
+    "uses": "weapon unlocks",
+    "location": "chaos",
+    "method": "hand",
+    "filename": "darkness.png",
+    "id": 6
+  },
+  {
+    "name": "deathcap",
+    "uses": "shop currency",
+    "location": "erebus (rainfall)",
+    "method": "hand",
+    "filename": "deathcap.png",
+    "id": 7
+  },
+  {
+    "name": "driftwood",
+    "uses": "incantations",
+    "location": "rift of thessaly",
+    "method": "hand",
+    "filename": "driftwood.png",
+    "id": 8
+  },
+  {
+    "name": "fate fabric",
+    "uses": "incantations",
+    "location": "crossroads",
+    "method": "shop",
+    "filename": "fatefabric.png",
+    "id": 9
+  },
+  {
+    "name": "garlic",
+    "uses": "incantations",
+    "location": "city of ephyra",
+    "method": "grown",
+    "filename": "garlic.png",
+    "id": 10
+  },
+  {
+    "name": "garlic cloves",
+    "uses": "growing greeneries",
+    "location": "city of ephyra",
+    "method": "spade",
+    "filename": "garliccloves.png",
+    "id": 11
+  },
+  {
+    "name": "glassrock",
+    "uses": "incantations",
+    "location": "mourning fields",
+    "method": "pick",
+    "filename": "glassrock.png",
+    "id": 12
+  },
+  {
+    "name": "golden apple",
+    "uses": "incantations",
+    "location": "rift of thessaly",
+    "method": "boss reward",
+    "filename": "goldenapple.png",
+    "id": 13
+  },
+  {
+    "name": "iron",
+    "uses": "incantations",
+    "location": "rift of thessaly",
+    "method": "pick",
+    "filename": "iron.png",
+    "id": 14
+  },
+  {
+    "name": "limestone",
+    "uses": "incantations",
+    "location": "oceanus",
+    "method": "pick",
+    "filename": "limestone.png",
+    "id": 15
+  },
+  {
+    "name": "lotus",
+    "uses": "incantations",
+    "location": "oceanus",
+    "method": "hand",
+    "filename": "lotus.png",
+    "id": 16
+  },
+  {
+    "name": "mandrake root",
+    "uses": "incantations",
+    "location": "rift of thessaly",
+    "method": "grown",
+    "filename": "mandrakeroot.png",
+    "id": 17
+  },
+  {
+    "name": "mandrake seeds",
+    "uses": "growing greeneries",
+    "location": "rift of thessaly",
+    "method": "spade",
+    "filename": "mandrakeseeds.png",
+    "id": 18
+  },
+  {
+    "name": "marble",
+    "uses": "incantations",
+    "location": "tartarus",
+    "method": "pick",
+    "filename": "marble.png",
+    "id": 19
+  },
+  {
+    "name": "moly",
+    "uses": "incantations",
+    "location": "erebus",
+    "method": "hand",
+    "filename": "moly.png",
+    "id": 20
+  },
+  {
+    "name": "moon dust",
+    "uses": "arcana upgrades",
+    "location": "crossroads",
+    "method": "cauldron",
+    "filename": "moondust.png",
+    "id": 21
+  },
+  {
+    "name": "moss",
+    "uses": "incantations",
+    "location": "city of ephyra",
+    "method": "hand",
+    "filename": "moss.png",
+    "id": 22
+  },
+  {
+    "name": "myrtle",
+    "uses": "incantations",
+    "location": "mourning fields",
+    "method": "hand",
+    "filename": "myrtle.png",
+    "id": 23
+  },
+  {
+    "name": "mystery seed",
+    "uses": "growing greeneries",
+    "location": "any",
+    "method": "spade",
+    "filename": "mysteryseed.png",
+    "id": 24
+  },
+  {
+    "name": "nightmare",
+    "uses": "weapon upgrades",
+    "location": "any (fear active)",
+    "method": "boss reward",
+    "filename": "nightmare.png",
+    "id": 25
+  },
+  {
+    "name": "nightshade",
+    "uses": "incantations",
+    "location": "erebus",
+    "method": "grown",
+    "filename": "nightshade.png",
+    "id": 26
+  },
+  {
+    "name": "nightshade seeds",
+    "uses": "growing greeneries",
+    "location": "erebus",
+    "method": "spade",
+    "filename": "nightshadeseeds.png",
+    "id": 27
+  },
+  {
+    "name": "origin seeds",
+    "uses": "growing greeneries",
+    "location": "chaos",
+    "method": "spade",
+    "filename": "originseeds.png",
+    "id": 28
+  },
+  {
+    "name": "pearl",
+    "uses": "incantations",
+    "location": "oceanus",
+    "method": "boss reward",
+    "filename": "pearl.png",
+    "id": 29
+  },
+  {
+    "name": "plasma",
+    "uses": "incantations",
+    "location": "chaos",
+    "method": "pick",
+    "filename": "plasma.png",
+    "id": 30
+  },
+  {
+    "name": "poppy",
+    "uses": "incantations",
+    "location": "tartarus",
+    "method": "grown",
+    "filename": "poppy.png",
+    "id": 31
+  },
+  {
+    "name": "poppy seeds",
+    "uses": "growing greeneries",
+    "location": "tartarus",
+    "method": "spade",
+    "filename": "poppyseeds.png",
+    "id": 32
+  },
+  {
+    "name": "psyche",
+    "uses": "arcana upgrades",
+    "location": "any",
+    "method": "room reward",
+    "filename": "psyche.png",
+    "id": 33
+  },
+  {
+    "name": "rubbish",
+    "uses": "incantations",
+    "location": "crossroads",
+    "method": "hand",
+    "filename": "rubbish.png",
+    "id": 34
+  },
+  {
+    "name": "shaderot",
+    "uses": "incantations",
+    "location": "tartarus",
+    "method": "hand",
+    "filename": "shaderot.png",
+    "id": 35
+  },
+  {
+    "name": "shadow",
+    "uses": "incantations",
+    "location": "crossroads",
+    "method": "cauldron",
+    "filename": "shadow.png",
+    "id": 36
+  },
+  {
+    "name": "silver",
+    "uses": "weapon unlocks",
+    "location": "erebus",
+    "method": "pick",
+    "filename": "silver.png",
+    "id": 37
+  },
+  {
+    "name": "star dust",
+    "uses": "arcana upgrades",
+    "location": "any (chaos trial)",
+    "method": "boss reward",
+    "filename": "stardust.png",
+    "id": 38
+  },
+  {
+    "name": "tears",
+    "uses": "incantations",
+    "location": "mourning fields",
+    "method": "boss reward",
+    "filename": "tears.png",
+    "id": 39
+  },
+  {
+    "name": "thalamus",
+    "uses": "incantations",
+    "location": "chaos",
+    "method": "grown",
+    "filename": "thalamus.png",
+    "id": 40
+  },
+  {
+    "name": "wheat",
+    "uses": "incantations",
+    "location": "mourning fields",
+    "method": "grown",
+    "filename": "wheat.png",
+    "id": 41
+  },
+  {
+    "name": "wheat seeds",
+    "uses": "growing greeneries",
+    "location": "mourning fields",
+    "method": "spade",
+    "filename": "wheatseeds.png",
+    "id": 42
+  },
+  {
+    "name": "wool",
+    "uses": "incantations",
+    "location": "city of ephyra",
+    "method": "boss reward",
+    "filename": "wool.png",
+    "id": 43
+  },
+  {
+    "name": "zodiac sand",
+    "uses": "incantations",
+    "location": "tartarus",
+    "method": "boss reward",
+    "filename": "zodiacsand.png",
+    "id": 44
+  }
+]
