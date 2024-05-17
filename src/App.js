@@ -4,11 +4,8 @@ import d from './data.json';
 
 const Row = (props) => {
     const itemData = props.data;
-    const handleNumChange = (e) => {
-        e.preventDefault();
-        console.log(e.target.children[0].value);
-        localStorage.setItem(itemData.name, e.target.children[0].value);
-    }
+    const enter = (e) => {e.preventDefault(); localStorage.setItem(itemData.name, e.target.children[0].value);}
+    const out = (e) => {e.preventDefault();   localStorage.setItem(itemData.name, e.target.value);}
     return(
         <tr>
             <td><button value = {itemData.id} onClick={props.setDisplay}>{itemData.name}</button></td>
@@ -16,25 +13,25 @@ const Row = (props) => {
             <td>{itemData.location}</td>
             <td>{itemData.method}</td>
             <td>
-                <form onSubmit={handleNumChange}>
-                    <input type="text" id={itemData.id + "_textinput"} name={itemData.name + " needed"} defaultValue={localStorage.getItem(itemData.name)}/>
+                <form onSubmit = {enter} onBlur = {out}>
+                    <input type = "text" id = {itemData.id + "_textinput"} name = {itemData.name + " needed"} placeholder = "0" defaultValue = {localStorage.getItem(itemData.name)}/>
                 </form>
             </td>
         </tr>
-    )
+    );
 }
 
 const Item = (props) => {
     if(props.disp === -1) {
-        return(<div></div>)
+        return(<div></div>);
     } else {
-        const itemData = props.data[props.disp]
+        const itemData = props.data[props.disp];
         return(
             <div>
                 all about {itemData.name}
-                <button value = {-1} onClick={props.setDisplay}>close</button>
+                <button value = {-1} onClick = {props.setDisplay}>close</button>
             </div>
-        )
+        );
     }
 }
 
@@ -50,7 +47,7 @@ const App = () => {
         setDisplay([display[2], disp, display[0]]);
     }
     return (
-        <div className="App">
+        <div className = "App">
             <table style = {{display: display[0]}}>
                 <thead>
                     <tr>
@@ -68,7 +65,6 @@ const App = () => {
             <Item disp = {display[1]} data = {data} setDisplay = {changeDisplay}/>
         </div>
     );
-    
 }
 
 export default App;
