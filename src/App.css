@@ -1,0 +1,47 @@
+body {
+    font-family: monospace;
+    font-size: 16px;
+    background-color: #17171b;
+    color:white;
+}
+
+button {
+    font-family: monospace;
+    font-size: 16px;
+    background-color: rgba(0,0,0,0);
+    border-style: none;
+    color:white;
+    text-decoration: underline;
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+
+button:hover {
+    cursor:pointer;
+    background-color: #2c2c37;
+}
+
+.itemimgs {
+    height:100px;
+}
+
+input {
+    border-color: rgba(0,0,0,0) rgba(0,0,0,0) white rgba(0,0,0,0);
+    max-width: 44px;
+    font-family: monospace;
+    font-size: larger;
+    background-color: #17171b;
+    color:white;
+    width:auto;
+}
+
+td {
+    text-align: center;
+}
+
+
+#clearsaves {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
