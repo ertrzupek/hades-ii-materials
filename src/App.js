@@ -44,8 +44,8 @@ const Item = (props) => {
 const App = () => {
     const [data, setData] = React.useState([]);
     const [display, setDisplay] = React.useState(["block", -1, "none"]);
-    //name, uses, locaiton, method, needed
-    const [sort, setSort] = React.useState("name");
+    //name, location, method, needed
+    const [sort, setSort] = React.useState(0);
     React.useEffect(() => {
         setData(d);
     }, []);
@@ -55,15 +55,43 @@ const App = () => {
         const disp = (display[1] === -1) ? e.currentTarget.value : -1;
         setDisplay([display[2], disp, display[0]]);
     }
+    const changeSort = (e) => {
+        e.preventDefault();
+        console.log("sorting to " + e.currentTarget.value);
+        setSort(e.currentTarget.value);
+    }
     const clear = () => {
         localStorage.clear();
         window.location.reload();
     }
-
-    // const s = (e) => {
-    //     setSort();
-    // }
-    // data.sort();
+    const sortData = () => {
+        if(sort === "0") {
+            data.sort((a, b) => {
+                if (a.name < b.name) {
+                  return -1;
+                } return 0;
+            });
+        } else if(sort === "1") {
+            data.sort((a, b) => {
+                if (a.location < b.location) {
+                  return -1;
+                } return 0;
+            });
+        } else if(sort === "2") {
+            data.sort((a, b) => {
+                if (a.method < b.method) {
+                  return -1;
+                } return 0;
+            });
+        } else if(sort === "3") {
+            data.sort((a, b) => {
+                if(localStorage.getItem(a.name) > localStorage.getItem(b.name)) {
+                  return -1;
+                } return 0;
+            });
+        }
+    }
+    sortData();
     return (
         <div className = "App">
             <div style = {{display: display[0]}}>
@@ -71,10 +99,10 @@ const App = () => {
                 <table style = {{width:"80%"}}>
                     <thead>
                         <tr>
-                            <th style = {{width:"5%"}}>num needed</th>
-                            <th style = {{width:"10%"}}>item</th>
-                            <th style = {{width:"20%"}}>location</th>
-                            <th style = {{width:"20%"}}>method</th>
+                            <th style = {{width:"5%"}}><button value = {3} onClick={changeSort}>needed</button></th>
+                            <th style = {{width:"10%"}}><button value = {0} onClick={changeSort}>item</button></th>
+                            <th style = {{width:"20%"}}><button value = {1} onClick={changeSort}>location</button></th>
+                            <th style = {{width:"20%"}}><button value = {2} onClick={changeSort}>method</button></th>
                             <th style = {{width:"20%"}}>uses</th>
                         </tr>
                     </thead>
